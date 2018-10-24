@@ -59,6 +59,7 @@ export default function getMuiTheme(muiTheme, ...more) {
     },
     button: {
       height: 36,
+      lineHeight: 36,
       minWidth: 88,
       iconButtonSize: spacing.iconSize * 2,
     },

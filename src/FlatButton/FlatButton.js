@@ -200,6 +200,7 @@ class FlatButton extends Component {
         height: buttonHeight,
         minWidth: buttonMinWidth,
         textTransform: buttonTextTransform,
+        lineHeight: buttonLineHeight,
       },
       flatButton: {
         buttonFilterColor,
@@ -227,7 +228,7 @@ class FlatButton extends Component {
 
     const mergedRootStyles = Object.assign({}, {
       height: buttonHeight,
-      lineHeight: `${buttonHeight}px`,
+      lineHeight: `${buttonLineHeight}px`,
       minWidth: fullWidth ? '100%' : buttonMinWidth,
       color: defaultTextColor,
       transition: transitions.easeOut(),
