@@ -41,7 +41,8 @@
     "test:integration:watch": "cross-env NODE_ENV=test babel-node test/watch.js integration",
     "test:unit": "cross-env NODE_ENV=test babel-node test/index.js unit",
     "test:unit:watch": "cross-env NODE_ENV=test babel-node test/watch.js unit",
-    "postpublish": "npm run build && cd build && npm publish"
+    "postpublish": "npm run build && cd build && npm publish",
+    "postinstall": "npm run build"
   },
   "peerDependencies": {
     "react": "^15.4.0 || ^16.0.0",
